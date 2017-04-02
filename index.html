@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Connect 4</title>
+      <style media="all" type="text/css">
+        canvas {
+        display: block;
+        margin: 0 auto;
+        }
+      </style>
+  </head>
+  <script src="pixi.min.js"></script>
+  <body>
+    <h1>Helloooo World</h1>
+    <script type="text/javascript">
+      var type = "WebGL"
+      if(!PIXI.utils.isWebGLSupported()){
+        type = "canvas"
+      }
+
+      PIXI.utils.sayHello(type)
+    </script>
+    <script src="./build/main.js"></script>
+  </body>
+
+</html>
